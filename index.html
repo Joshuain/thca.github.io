@@ -4,138 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hydrotech - Premium Hemp Products</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #228B22; /* Forest green for pine theme */
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        section {
-            margin-bottom: 40px;
-            padding: 20px 0;
-            border-bottom: 1px solid #ddd;
-        }
-        h1, h2, h3 {
-            color: #228B22;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        .faq-subheading {
-            font-weight: bold;
-            color: #555;
-        }
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-        .product-item {
-            text-align: center;
-        }
-        .product-placeholder {
-            width: 100%;
-            height: 150px;
-            background-color: #eee;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Hydrotech</h1>
-        <p>Hydrotech isn’t just a brand — it’s a movement. Built by creators and cannabis lovers, we’re on a mission to bring the highest-quality hemp products to the community we love. From premium THCA flower to real Delta-9 edibles, we deliver excellence with transparency and authenticity.</p>
-        <p>Join the Hydrotech community and keep up with exclusive drops, behind-the-scenes content, and the latest in cannabis culture.</p>
-    </header>
-
-    <nav>
-        <a href="#shop">Shop</a>
-        <a href="#about">About</a>
-        <a href="#legal">Is This Legal?</a>
-        <a href="#faq">F.A.Q.</a>
-        <a href="#contact">Contact</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2><img src="images/logo.png" alt="Hydrotech Logo" style="height: 40px; vertical-align: middle;"> Hydrotech</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#legal">Is This Legal?</a></li>
+                <li><a href="#faq">F.A.Q.</a></li>
+                <li><a href="#shipping">Shipping Policy</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <input type="text" class="search-bar" placeholder="Search products...">
+                <span class="cart-icon">🛒</span>
+            </div>
+        </div>
     </nav>
 
-    <main>
-        <section id="shop">
-            <h2>Shop Our Products</h2>
-            <p>Explore our premium hemp products, all tested for quality and compliance with the 2018 Farm Bill.</p>
-            <div class="product-grid">
-                <div class="product-item">
-                    <div class="product-placeholder">[Image: THCA Cartridge]</div>
-                    <h3>Premium THCA Cartridges</h3>
-                    <p>Made from high-quality THCA flower with less than 0.3% Delta-9 THC. Perfect for a smooth experience.</p>
-                    <p><strong>Price: $xx.xx</strong></p>
-                </div>
-                <div class="product-item">
-                    <div class="product-placeholder">[Image: THCA Disposables]</div>
-                    <h3>Premium THCA Disposables</h3>
-                    <p>Made from high-quality THCA flower, lab-tested for safety.</p>
-                    <p><strong>Price: $xx.xx</strong></p>
-                </div>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Hydrotech</h1>
+            <p>A movement for cannabis lovers, delivering premium THCA cartridges and disposables with transparency.</p>
+            <a href="#shop" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="shop" class="products">
+        <h2>Shop Our Products</h2>
+        <p>Explore our premium hemp products, all tested for quality and compliance with the 2018 Farm Bill.</p>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/thca-cartridge.jpg" alt="Premium THCA Cartridge">
+                <h3>Premium THCA Cartridges</h3>
+                <p>Made from high-quality THCA flower with less than 0.3% Delta-9 THC. Perfect for a smooth experience.</p>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-        </section>
+            <div class="product-card">
+                <img src="images/thca-disposable.jpg" alt="Premium THCA Disposable">
+                <h3>Premium THCA Disposables</h3>
+                <p>Made from high-quality THCA flower, lab-tested for safety.</p>
+                <p class="price">$24.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
 
-        <section id="about">
-            <h2>About Hydrotech</h2>
-            <p>Founded by a passionate team of cannabis enthusiasts, Hydrotech is dedicated to elevating the hemp experience. We source the finest hemp from trusted growers, ensuring every product meets our high standards for quality and transparency. Our community-driven approach connects creators, consumers, and cannabis culture through premium products.</p>
-            <p>Our mission: Deliver authentic, lab-tested hemp products that you can trust, backed by a commitment to education and innovation. We only use two ingridgients; THC & Terpenes. No altnoid, no additive, and no chemicals that are not obtained from the plant.</p>
-        
-        </section>
+    <section id="about" class="about">
+        <h2>About Hydrotech</h2>
+        <img src="images/about-team.jpg" alt="Hydrotech Team" style="max-width: 400px; display: block; margin: 10px auto;">
+        <p>Founded by a passionate team of cannabis enthusiasts, Hydrotech is dedicated to elevating the hemp experience. We source the finest hemp from trusted growers, ensuring every product meets our high standards for quality and transparency. Our community-driven approach connects creators, consumers, and cannabis culture through premium products.</p>
+        <p>Our mission: Deliver authentic, lab-tested hemp products that you can trust, backed by a commitment to education and innovation. We only use two ingredients: THC & Terpenes. No altnoid, no additive, and no chemicals that are not obtained from the plant.</p>
+    </section>
 
-        <section id="legal">
-            <h2>Is this really legal?</h2>
-            <p>Under the 2018 Farm Bill, hemp products are federally legal as long as they contain less than 0.3% Delta-9 THC by dry weight.</p>
-            <p>Every Hydrotech product is tested by independent labs. Certificates of Analysis (COAs) are available right on our product pages and linked via QR codes on our packaging.</p>
-        </section>
+    <section id="legal" class="about">
+        <h2>Is this really legal?</h2>
+        <p>Under the 2018 Farm Bill, hemp products are federally legal as long as they contain less than 0.3% Delta-9 THC by dry weight.</p>
+        <p>Every Hydrotech product is tested by independent labs. Certificates of Analysis (COAs) are available right on our product pages and linked via QR codes on our packaging.</p>
+    </section>
 
-        <section id="faq">
-            <h2>F.A.Q.</h2>
-            <h3 class="faq-subheading">Shipping Zone Policy</h3>
+    <section id="faq" class="faq">
+        <h2>F.A.Q.</h2>
+        <div class="faq-item">
+            <h3>Shipping Zone Policy</h3>
             <p>All orders are processed within 1–3 business days. Once shipped, you’ll receive a tracking number via email.</p>
-            <h3 class="faq-subheading">We don’t ship to the following states:</h3>
+        </div>
+        <div class="faq-item">
+            <h3>We don’t ship to the following states:</h3>
             <ul>
                 <li>Arkansas</li>
                 <li>Idaho</li>
@@ -143,46 +84,61 @@
                 <li>Oregon</li>
                 <li>Rhode Island</li>
             </ul>
-        </section>
-
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: support@hydrotech.com</p>
-            <p>Follow us on Twitter for updates on exclusive drops @hydrotechUS</p>
-        </section>
-    </main>
-
-<footer>
-    <div class="footer-content">
-        <div class="footer-links">
-            <a href="#about">About Us</a>
-            <a href="#shop">Shop</a>
-            <a href="#faq">FAQ</a>
-            <a href="#shipping">Shipping Policy</a>
-            <a href="/pages/learn">Learn</a>
-            <a href="/pages/privacy">Privacy Policy</a>
         </div>
-        
-        <div class="social-links">
-            <a href="https://x.com/HydrotechUS" target="_blank">🐦 X (Twitter)</a>
-        </div>
-        
-        <div class="newsletter">
-            <p>Subscribe to our newsletter for exclusive drops and updates:</p>
-            <input type="email" placeholder="Enter your email" style="width: 200px;">
-            <button>Subscribe</button>
-        </div>
-        
-        <div class="copyright">
-            <p>&copy; 2025 Hydrotech. All rights reserved. | Legal hemp products under 2018 Farm Bill. | support@hydrotech.com</p>
-            <p>Accepted Payments: Visa, Mastercard, Discover, American Express</p>
+    </section>
+
+    <section id="shipping" class="about">
+        <h2>Shipping Policy</h2>
+        <p>Orders are processed within 1–3 business days. We are not responsible for carrier delays or incorrect shipping information. Contact us at support@hydrotech.com for support.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@hydrotech.com</p>
+        <p>Follow us on Twitter for updates on exclusive drops @hydrotechUS</p>
+    </section>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <p>Cart is empty.</p>
         </div>
     </div>
-</footer>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#about">About Us</a>
+                <a href="#shop">Shop</a>
+                <a href="#faq">FAQ</a>
+                <a href="#shipping">Shipping Policy</a>
+                <a href="/pages/learn">Learn</a>
+                <a href="/pages/privacy">Privacy Policy</a>
+            </div>
+            <div class="social-links">
+                <a href="https://x.com/HydrotechUS" target="_blank">🐦 X (Twitter)</a>
+            </div>
+            <div class="newsletter">
+                <p>Subscribe to our newsletter for exclusive drops and updates:</p>
+                <input type="email" placeholder="Enter your email" style="width: 200px;">
+                <button>Subscribe</button>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Hydrotech. All rights reserved. | Legal hemp products under 2018 Farm Bill. | support@hydrotech.com</p>
+                <p>Accepted Payments: Visa, Mastercard, Discover, American Express</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Basic cart modal toggle
+        const cartModal = document.getElementById('cart-modal');
+        const cartIcon = document.querySelector('.cart-icon');
+        const closeBtn = document.querySelector('.close');
+        cartIcon.onclick = () => { cartModal.style.display = 'block'; };
+        closeBtn.onclick = () => { cartModal.style.display = 'none'; };
+        window.onclick = (e) => { if (e.target == cartModal) cartModal.style.display = 'none'; };
+    </script>
 </body>
 </html>
-
-
-
-
