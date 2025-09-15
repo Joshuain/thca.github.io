@@ -71,7 +71,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(34, 139, 34, 0.8), rgba(34, 139, 34, 0.8)), url('https://via.placeholder.com/1200x600?text=Hemp+Fields') center/cover;
+    background: linear-gradient(rgba(34, 139, 34, 0.8), rgba(34, 139, 34, 0.8)), url('images/hero-banner.jpg') center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -186,6 +186,73 @@ footer {
 footer a {
     color: #90EE90;
     text-decoration: none;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #90EE90;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin: 15px 0;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #90EE90;
+}
+
+.newsletter {
+    margin: 15px 0;
+}
+
+.newsletter input {
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.newsletter button {
+    padding: 5px 10px;
+    background-color: #90EE90;
+    color: #228B22;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #1e7a1e;
+    color: white;
+}
+
+.copyright {
+    font-size: 0.9em;
+    margin-top: 15px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
 }
 
 /* Cart Modal */
