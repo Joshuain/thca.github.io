@@ -28,6 +28,10 @@
             color: white;
             margin: 0 15px;
             text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         main {
             max-width: 800px;
@@ -52,22 +56,30 @@
             font-weight: bold;
             color: #555;
         }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .product-item {
+            text-align: center;
+        }
+        .product-placeholder {
+            width: 100%;
+            height: 150px;
+            background-color: #eee;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+        }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
             margin-top: 40px;
-        }
-        .product-placeholder {
-            width: 100%;
-            height: 200px;
-            background-color: #eee;
-            margin: 10px 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
         }
     </style>
 </head>
@@ -79,6 +91,8 @@
     </header>
 
     <nav>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
         <a href="#legal">Is This Legal?</a>
         <a href="#faq">F.A.Q.</a>
         <a href="#shipping">Shipping Policy</a>
@@ -86,25 +100,41 @@
     </nav>
 
     <main>
+        <section id="shop">
+            <h2>Shop Our Products</h2>
+            <p>Explore our premium hemp products, all tested for quality and compliance with the 2018 Farm Bill.</p>
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-placeholder">[Image: THCA Flower]</div>
+                    <h3>Premium THCA Flower</h3>
+                    <p>High-quality hemp flower with less than 0.3% Delta-9 THC. Perfect for a smooth experience.</p>
+                    <p><strong>Price: $29.99</strong></p>
+                </div>
+                <div class="product-item">
+                    <div class="product-placeholder">[Image: Delta-9 Edibles]</div>
+                    <h3>Delta-9 Edibles</h3>
+                    <p>Delicious gummies crafted for potency and flavor, lab-tested for safety.</p>
+                    <p><strong>Price: $19.99</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Pine Park</h2>
+            <p>Founded by a passionate team of cannabis enthusiasts, Pine Park is dedicated to elevating the hemp experience. We source the finest hemp from trusted growers, ensuring every product meets our high standards for quality and transparency. Our community-driven approach connects creators, consumers, and cannabis culture through premium products and engaging content like our Pine Park After Dark podcast.</p>
+            <p>Our mission: Deliver authentic, lab-tested hemp products that you can trust, backed by a commitment to education and innovation.</p>
+        </section>
+
         <section id="legal">
             <h2>Is this really legal?</h2>
             <p>Under the 2018 Farm Bill, hemp products are federally legal as long as they contain less than 0.3% Delta-9 THC by dry weight.</p>
-            <p>Every Pine Park product is tested by independent labs. Certificates of Analysis (COAs) are available right on our product pages and linked via QR codes on our packaging. No detours, no filler websites — just direct access to real lab results.</p>
-            <p>Every product is carefully crafted and rigorously tested to ensure it meets this strict legal requirement, so you can enjoy with confidence and peace of mind. Trust is non-negotiable for us and we share the test results to prove it!</p>
-            
-            <!-- Placeholder for product images/descriptions; add real ones as needed -->
-            <div class="product-placeholder">
-                <p>[Image: Premium THCA Flower - Placeholder]</p>
-            </div>
-            <p><strong>Product Example:</strong> Premium THCA Flower - High-quality hemp flower tested under 0.3% Delta-9 THC. Price: $XX.XX</p>
+            <p>Every Pine Park product is tested by independent labs. Certificates of Analysis (COAs) are available right on our product pages and linked via QR codes on our packaging.</p>
         </section>
 
         <section id="faq">
             <h2>F.A.Q.</h2>
-            
             <h3 class="faq-subheading">Shipping Zone Policy</h3>
-            <p>All orders are processed within 1–3 business days. Once shipped, you’ll receive a tracking number via email. Shipping times may vary based on your location and selected shipping method. Orders shipping outside the continental United States (including Alaska, Hawaii, and U.S. territories) may be subject to higher shipping rates and may be excluded from free shipping promotions, depending on order size and our discretion. We are not responsible for carrier delays or incorrect shipping information. For questions or support, contact us at support@pinepark.shop.</p>
-            
+            <p>All orders are processed within 1–3 business days. Once shipped, you’ll receive a tracking number via email.</p>
             <h3 class="faq-subheading">We don’t ship to the following states:</h3>
             <ul>
                 <li>Arkansas</li>
@@ -113,42 +143,11 @@
                 <li>Oregon</li>
                 <li>Rhode Island</li>
             </ul>
-            <p>Orders placed from these states will be canceled and refunded.</p>
-            
-            <h3 class="faq-subheading">What is your return policy?</h3>
-            <p>Shipping Terms & Conditions We care about getting your order to you safely, quickly, and with full transparency. These shipping terms are designed to ensure a smooth experience for everyone—while also helping us prevent misuse of our policies. By placing an order on our website, you agree to the following terms:</p>
-            
-            <h3 class="faq-subheading">Shipping Terms & Conditions</h3>
-            <ol>
-                <li><strong>Order Fulfillment & Delivery Confirmation</strong><br>
-                    Orders are typically processed within 1–3 business days (excluding weekends and holidays).<br>
-                    Once your package is marked as “Delivered” by the shipping carrier, it is considered fulfilled and complete.<br>
-                    If you believe your package was delivered incorrectly, please reach out within 72 hours so we can help investigate.
-                </li>
-                <li><strong>Lost or Stolen Packages</strong><br>
-                    If your package shows as delivered but you didn’t receive it, please check with neighbors or your local carrier first.<br>
-                    If it’s confirmed missing or stolen, we require a police report to process any refund or replacement request. This helps protect both you and our business from fraudulent activity.<br>
-                    The report must be submitted to us within 3 business days of the delivery date.
-                </li>
-                <li><strong>Damaged Items</strong><br>
-                    If your item arrives damaged, please notify us within 48 hours of delivery.<br>
-                    Be sure to include clear photos or video of the damaged item and packaging so we can help make it right.<br>
-                    Claims submitted after this window or without documentation may not be eligible for refund or replacement.
-                </li>
-                <li><strong>Shipping Insurance</strong><br>
-                    We offer optional shipping insurance at checkout for added peace of mind.<br>
-                    Orders without shipping insurance may not qualify for compensation if lost, stolen, or damaged after shipment.
-                </li>
-                <li><strong>Incorrect Address Policy</strong><br>
-                    Please double-check your shipping address at checkout.<br>
-                    We are not responsible for delays or losses due to incorrect or incomplete addresses provided by the customer.
-                </li>
-            </ol>
         </section>
 
         <section id="shipping">
-            <h2>Shipping Policy Summary</h2>
-            <p>(Integrated above in FAQ for completeness. Refer to Shipping Terms & Conditions for details.)</p>
+            <h2>Shipping Policy</h2>
+            <p>Orders are processed within 1–3 business days. We are not responsible for carrier delays or incorrect shipping information. Contact us at support@pinepark.shop for support.</p>
         </section>
 
         <section id="contact">
