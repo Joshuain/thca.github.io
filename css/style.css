@@ -14,13 +14,15 @@ body {
 
 /* Navigation */
 .navbar {
-    background-color: #000000; /* Black */
+    background-color: #000000; /* Black - already set as requested */
     color: white;
     padding: 1rem 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    font-family: "Copperplate", "Papyrus", fantasy; /* Changed to Copperplate with fallbacks */
+    font-size: 1.2rem; /* Slightly larger for elegance */
 }
 
 .nav-container {
@@ -34,6 +36,7 @@ body {
 
 .logo h2 {
     color: white;
+    font-family: inherit; /* Inherit Copperplate from .navbar */
 }
 
 .nav-menu {
@@ -46,6 +49,7 @@ body {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
+    font-family: inherit; /* Inherit Copperplate from .navbar */
 }
 
 .nav-menu a:hover {
