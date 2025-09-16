@@ -8,13 +8,13 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #333333;
+    background-color: #F8F9FA;
 }
 
 /* Navigation */
 .navbar {
-    background-color: #000000; /* Black - already set as requested */
+    background-color: #003366; /* Dark navy for header */
     color: white;
     padding: 1rem 0;
     position: fixed;
@@ -53,7 +53,7 @@ body {
 }
 
 .nav-menu a:hover {
-    color: #90EE90;
+    color: #007BFF; /* Primary blue for hover */
 }
 
 .nav-icons {
@@ -64,18 +64,20 @@ body {
 
 .search-bar {
     padding: 0.5rem;
-    border: none;
+    border: 1px solid #007BFF; /* Blue border */
     border-radius: 4px;
+    background-color: white;
 }
 
 .cart-icon {
     cursor: pointer;
     font-size: 1.5rem;
+    color: white;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(34, 139, 34, 0.8), rgba(34, 139, 34, 0.8)), url('images/new-hero-bg.jpg') center/cover;
+    background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.8)), url('images/new-hero-bg.jpg') center/cover; /* Blue overlay */
     height: 100vh;
     display: flex;
     align-items: center;
@@ -91,8 +93,8 @@ body {
 }
 
 .cta-button {
-    background-color: #90EE90;
-    color: #228B22;
+    background-color: #007BFF; /* Primary blue */
+    color: white;
     padding: 1rem 2rem;
     text-decoration: none;
     border-radius: 4px;
@@ -101,8 +103,7 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #228B22;
-    color: white;
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 /* Products Section */
@@ -110,6 +111,7 @@ body {
     padding: 4rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: white; /* White background for sections */
 }
 
 .product-grid {
@@ -121,15 +123,17 @@ body {
 
 .product-card {
     background: white;
+    border: 1px solid #DEE2E6; /* Light gray border */
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .product-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.15); /* Subtle blue shadow */
 }
 
 .product-card img {
@@ -142,12 +146,12 @@ body {
 .price {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #228B22;
+    color: #007BFF; /* Blue for prices */
     margin: 1rem 0;
 }
 
 .add-to-cart {
-    background-color: #228B22;
+    background-color: #007BFF; /* Blue button */
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -157,7 +161,7 @@ body {
 }
 
 .add-to-cart:hover {
-    background-color: #1e7a1e;
+    background-color: #0056b3; /* Darker blue */
 }
 
 /* Other Sections */
@@ -172,7 +176,7 @@ body {
 .faq-item {
     margin-bottom: 1rem;
     padding: 1rem;
-    border-left: 4px solid #228B22;
+    border-left: 4px solid #007BFF; /* Blue accent border */
 }
 
 .contact {
@@ -181,14 +185,14 @@ body {
 
 /* Footer */
 footer {
-    background-color: #228B22;
+    background-color: #003366; /* Dark navy */
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
 footer a {
-    color: #90EE90;
+    color: #007BFF; /* Blue links */
     text-decoration: none;
 }
 
@@ -202,7 +206,7 @@ footer a {
 }
 
 .footer-links a {
-    color: #90EE90;
+    color: #007BFF; /* Blue */
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
@@ -210,6 +214,7 @@ footer a {
 
 .footer-links a:hover {
     text-decoration: underline;
+    color: #80BDFF; /* Lighter blue on hover */
 }
 
 .social-links {
@@ -224,7 +229,7 @@ footer a {
 }
 
 .social-links a:hover {
-    color: #90EE90;
+    color: #007BFF; /* Blue on hover */
 }
 
 .newsletter {
@@ -234,22 +239,22 @@ footer a {
 .newsletter input {
     padding: 5px;
     margin-right: 10px;
-    border: none;
+    border: 1px solid #007BFF; /* Blue border */
     border-radius: 3px;
+    background-color: white;
 }
 
 .newsletter button {
     padding: 5px 10px;
-    background-color: #90EE90;
-    color: #228B22;
+    background-color: #007BFF; /* Blue button */
+    color: white;
     border: none;
     border-radius: 3px;
     cursor: pointer;
 }
 
 .newsletter button:hover {
-    background-color: #1e7a1e;
-    color: white;
+    background-color: #0056b3; /* Darker blue */
 }
 
 .copyright {
@@ -287,6 +292,7 @@ footer a {
     top: 1rem;
     font-size: 2rem;
     cursor: pointer;
+    color: #003366; /* Navy close icon */
 }
 
 /* Responsive */
